@@ -132,15 +132,16 @@ html, body {
 .hero-left h1 {
 	font-size: 3.5rem;
 	font-weight: 700;
-	color: white;
+	color: rgb(255, 255, 255);
 	margin-bottom: 15px;
 	line-height: 1.2;
 }
 
 .hero-left p {
 	font-size: 1.2rem;
-	color: #ddd;
+	color: #ffffff;
 	margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .hero-right {
@@ -255,5 +256,88 @@ header a:hover {
 	.hero-wrapper {
 		gap: 20px;
 	}
+}
+
+/* ==================== HOW WE WORK SECTION ==================== */
+.how-section {
+	--how-bg: #f3f4ea; /* pale background like the screenshot */
+	--how-text: #2b2b1a; /* deep olive-ish text */
+	background: var(--how-bg);
+	padding: 100px 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.how-title {
+	font-size: 5.2rem;
+	line-height: 0.98;
+	color: var(--how-text);
+	font-weight: 600;
+	margin: 0 0 24px 0;
+	letter-spacing: -1px;
+	max-width: 520px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.how-intro {
+	color: #66685b;
+	max-width: 420px;
+	font-size: 1.05rem;
+	margin-top: 18px;
+}
+
+.work-card {
+	padding: 36px 26px;
+	background: transparent;
+	border-left: 1px solid rgba(0,0,0,0.06);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 180px;
+	padding-right: 30px;
+}
+
+.card-number {
+	color: #6b6b57;
+	font-size: 0.9rem;
+	margin-bottom: 14px;
+}
+
+.card-title {
+	font-size: 1.6rem;
+	color: var(--how-text);
+	margin: 0 0 14px 0;
+	font-weight: 500;
+	line-height: 1.18;
+	letter-spacing: -0.2px;
+}
+
+.card-desc {
+	color: #575750;
+	font-size: 0.96rem;
+	line-height: 1.75;
+	margin: 0;
+}
+
+@media (max-width: 1200px) {
+	.how-section { padding: 80px 0; }
+	.how-title { font-size: 4.8rem; }
+}
+
+@media (max-width: 768px) {
+	.how-section { padding: 60px 0; }
+	.how-title { font-size: 3.2rem; }
+	.how-intro { max-width: none; }
+	/* Stack cards into a single column on mobile and change divider style */
+	.how-right .grid { grid-template-columns: 1fr !important; }
+	.work-card { border-left: none; border-top: 1px solid rgba(0,0,0,0.06); padding-left: 0; padding-top: 18px; }
+	.work-card:first-child { border-top: none; padding-top: 0; }
+}
+
+@media (max-width: 480px) {
+	.how-title { font-size: 2.4rem; }
+	.work-card { padding: 18px 12px; }
 }
 
