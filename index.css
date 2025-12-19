@@ -1,0 +1,259 @@
+/* ==================== COLOR PALETTE ==================== */
+:root {
+	/* Primary Colors */
+	--primary-white: #ffffff;
+	--primary-black: #000000;
+	--primary-light-gray: #f5f5f5;
+
+	/* Accent Colors */
+	--accent-orange: #d88728;
+	--accent-orange-light: #e8985a;
+	--accent-orange-dark: #c96d00;
+
+	/* Neutral Colors */
+	--text-white: #ffffff;
+	--text-light-gray: #e8e8e8;
+	--text-medium-gray: #999999;
+	--text-dark-gray: #333333;
+	--bg-light: #f8f8f8;
+	--bg-dark: #1a1a1a;
+
+	/* Status Colors */
+	--success: #4caf50;
+	--warning: #ffc107;
+	--error: #f44336;
+	--info: #2196f3;
+
+	/* Transparency Colors */
+	--overlay-dark: rgba(0, 0, 0, 0.4);
+	--overlay-light: rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+html, body {
+	height: 100%;
+}
+
+/* Color utility classes */
+.text-orange { color: var(--accent-orange); }
+.text-dark-gray { color: var(--text-dark-gray); }
+
+.bg-white { background-color: var(--primary-white); }
+.bg-light-gray { background-color: var(--primary-light-gray); }
+.bg-black { background-color: var(--primary-black); }
+
+.border-orange { border-color: var(--accent-orange); }
+.border-gray { border-color: #ddd; }
+
+/* Form styles */
+.form-input {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 12px;
+	font-size: 14px;
+	transition: all 0.3s ease;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.form-input:focus {
+	outline: none;
+	border-color: var(--accent-orange);
+	box-shadow: 0 0 0 3px rgba(216, 135, 40, 0.1);
+}
+
+.btn-submit {
+	background-color: var(--accent-orange);
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 12px 30px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	width: 100%;
+}
+
+.btn-submit:hover {
+	background-color: var(--accent-orange-dark);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(216, 135, 40, 0.3);
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero-section {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.hero-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+	-webkit-filter: brightness(0.7);
+	filter: brightness(0.7);
+}
+
+.hero-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 2;
+}
+
+.hero-content {
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.hero-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+	align-items: center;
+}
+
+.hero-left h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	color: white;
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+
+.hero-left p {
+	font-size: 1.2rem;
+	color: #ddd;
+	margin-bottom: 20px;
+}
+
+.hero-right {
+	background: white;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hero-right h2 {
+	font-size: 1.8rem;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.hero-right .form-subtitle {
+	color: var(--text-medium-gray);
+	margin-bottom: 30px;
+	font-size: 0.95rem;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	color: #333;
+	font-weight: 500;
+	font-size: 0.95rem;
+}
+
+/* ==================== HERO ANIMATION ==================== */
+.hero-left {
+	opacity: 0;
+	transform: translateX(-30px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-left.visible {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.hero-right {
+	opacity: 0;
+	transform: translateX(30px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-right.visible {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* ==================== HEADER STYLES ==================== */
+header {
+	backdrop-filter: blur(2px);
+	position: relative;
+	z-index: 10;
+	background-color: white;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+	color: #000;
+	transition: color 0.3s ease;
+}
+
+header a:hover {
+	color: var(--accent-orange);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+	.hero-wrapper {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	.hero-left h1 {
+		font-size: 2.5rem;
+	}
+
+	.hero-right {
+		padding: 30px;
+	}
+
+	.hero-left p {
+		font-size: 1rem;
+	}
+
+	.hero-right h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero-content {
+		padding: 15px;
+	}
+
+	.hero-left h1 {
+		font-size: 2rem;
+	}
+
+	.hero-right {
+		padding: 20px;
+	}
+
+	.hero-wrapper {
+		gap: 20px;
+	}
+}
+
