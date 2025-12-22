@@ -44,7 +44,7 @@
 		<header class="w-full">
 			<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between h-20 gap-4">
 				<!-- Left: Logo + Company Name -->
-				<a href="#" class="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
+				<a href="./index.html" class="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
 					<img src="./images/Ember Construction.png" alt="Brand Logo" class="h-10 sm:h-12 md:h-16 w-auto">
 					<span class="text-sm sm:btext-lg md:text-xl group-hover:text-orange transition duration-300" style="letter-spacing: 0.5px;">
 						<span style="color: #d88728; font-weight: 700;">Ember</span>
@@ -154,7 +154,7 @@
 							<p class="about-subtitle">Building Dreams Into Reality</p>
 							<p class="about-description">Ember Construction is a dedicated team of skilled professionals committed to transforming your vision into exceptional built environments. With over two decades of industry expertise, we bring passion, precision, and integrity to every project we undertake.</p>
 							<p class="about-details">We specialize in residential and commercial construction, combining innovative techniques with sustainable practices. Our team takes pride in delivering projects on time, within budget, and exceeding quality expectations. Every project is a testament to our commitment to excellence and client satisfaction.</p>
-							<button class="about-cta" onclick="document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth' }); document.getElementById('name').focus();">Request a Quote</button>
+							<button class="about-cta" style="background: var(--accent-orange);" onclick="document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth' }); document.getElementById('name').focus();">Request a Quote</button>
 						</div>
 					</div>
 				</div>
@@ -294,9 +294,68 @@
 				</div>
 			</section>
 
+			<!-- CTA Section matching screenshot -->
+			<section class="cta-section">
+				<div class="cta-container">
+					<!-- Left: Copy with features -->
+					<div class="cta-left">
+						<h2>We Buy Houses at Any Price in any condition!</h2>
+						<div class="cta-features">
+							<div class="feature">
+								<h3>Avoid Paying Unnecessary Fees</h3>
+								<p>Avoid paying any agent thousands in unnecessary fees. Ember Construction has helped hundreds of homeowners sell their houses fast.</p>
+							</div>
+							<div class="feature">
+								<h3>No Need For Remodeling Or Repairs</h3>
+								<p>When you choose to work with Ember Construction, there's no need to remodel or repair your house. We'll handle repairs, disposals, and cleaning!</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Right: Form Card -->
+					<div class="cta-right">
+						<div class="form-card">
+							<div class="logo-badge">
+								<img src="./images/Ember Construction.png" alt="Ember Construction Logo">
+							</div>
+
+							<div class="progress-section">
+								<p class="progress-label">Step 1 of 2</p>
+								<div class="progress-bar">
+									<div class="progress-fill" style="width: 50%;"></div>
+								</div>
+							</div>
+
+						<form id="contactForm">
+							<div class="form-group">
+								<label for="name">Full Name *</label>
+								<input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email Address *</label>
+								<input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
+							</div>
+
+							<div class="form-group">
+								<label for="phone">Phone Number</label>
+								<input type="tel" id="phone" name="phone" class="form-input" placeholder="(123) 456-7890">
+							</div>
+
+							<div class="form-group">
+								<button type="submit" class="btn-submit">Request Quote</button>
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
 		</main>
 
-		<footer class="h-20"></footer>
+		<footer class="footer-black">
+			<p>Copyright © Ember Construction All Rights Reserved | <a href="#">View Our Privacy Policy</a> | Designed by Gold Level Marketing</p>
+		</footer>
 
 		<!-- Scroll to Top Button (moved here to ensure correct order) -->
 		<button id="scrollTopBtn" class="scroll-to-top" aria-label="Scroll to top">
