@@ -1875,6 +1875,29 @@ header a:hover {
 	color: #fff;
 }
 
+/* Footer responsive adjustments */
+@media (max-width: 768px) {
+	.footer-black {
+		padding: 12px 16px;
+		font-size: 12px;
+	}
+
+	.footer-black p {
+		line-height: 1.5;
+	}
+}
+
+@media (max-width: 480px) {
+	.footer-black {
+		padding: 10px 12px;
+		font-size: 11px;
+	}
+
+	.footer-black p {
+		line-height: 1.4;
+	}
+}
+
 /* ==================== RESPONSIVE CTA ==================== */
 @media (max-width: 1024px) {
 	.cta-container {
