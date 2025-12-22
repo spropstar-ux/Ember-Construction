@@ -40,12 +40,13 @@
 		<script defer src="index.js"></script>
 	</head>
 	<body class="bg-white text-black antialiased">
+
 		<header class="w-full">
 			<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between h-20 gap-4">
 				<!-- Left: Logo + Company Name -->
 				<a href="#" class="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
 					<img src="./images/Ember Construction.png" alt="Brand Logo" class="h-10 sm:h-12 md:h-16 w-auto">
-					<span class="text-sm sm:text-lg md:text-xl group-hover:text-orange transition duration-300" style="letter-spacing: 0.5px;">
+					<span class="text-sm sm:btext-lg md:text-xl group-hover:text-orange transition duration-300" style="letter-spacing: 0.5px;">
 						<span style="color: #d88728; font-weight: 700;">Ember</span>
 						<span style="color: #d88728; font-weight: 300;"> Construction</span>
 					</span>
@@ -136,6 +137,24 @@
 										<button type="submit" class="btn-submit">Request Quote</button>
 									</div>
 								</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="about" class="about-section">
+				<div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
+					<div class="about-wrapper">
+						<div class="about-image">
+							<img src="/images/about-image.jpg" alt="Ember Construction Team" class="about-img">
+						</div>
+						<div class="about-content">
+							<h2 class="about-title">Ember Construction</h2>
+							<p class="about-subtitle">Building Dreams Into Reality</p>
+							<p class="about-description">Ember Construction is a dedicated team of skilled professionals committed to transforming your vision into exceptional built environments. With over two decades of industry expertise, we bring passion, precision, and integrity to every project we undertake.</p>
+							<p class="about-details">We specialize in residential and commercial construction, combining innovative techniques with sustainable practices. Our team takes pride in delivering projects on time, within budget, and exceeding quality expectations. Every project is a testament to our commitment to excellence and client satisfaction.</p>
+							<button class="about-cta" onclick="document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth' }); document.getElementById('name').focus();">Request a Quote</button>
 						</div>
 					</div>
 				</div>
@@ -278,5 +297,12 @@
 		</main>
 
 		<footer class="h-20"></footer>
+
+		<!-- Scroll to Top Button (moved here to ensure correct order) -->
+		<button id="scrollTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+			<svg fill="currentColor" viewBox="0 0 24 24">
+				<path d="M7 14l5-5 5 5z"></path>
+			</svg>
+		</button>
 	</body>
 </html>
