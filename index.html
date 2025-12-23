@@ -3,10 +3,63 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ember Construction</title>
-        <meta name="description" content="Ember Construction - Professional construction services tailored to your needs. Contact us for expert solutions and quality craftsmanship.">
+		<title>Ember Construction | Professional Construction Services</title>
+        <meta name="description" content="Ember Construction - Professional construction services tailored to your needs. Expert solutions for residential and commercial projects delivered on time and on budget.">
         <meta name="author" content="Ember Construction">
         <meta name="keywords" content="Construction, Building, Renovation, Home Improvement, Commercial Construction, Residential Construction, Quality Craftsmanship, Expert Solutions">
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+        <meta name="googlebot" content="index, follow">
+        <link rel="canonical" href="https://ember-construction.com/">
+
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ember-construction.com/">
+        <meta property="og:title" content="Ember Construction | Professional Construction Services">
+        <meta property="og:description" content="Professional construction services for residential and commercial projects. Quality craftsmanship, on-time delivery, and expert solutions.">
+        <meta property="og:image" content="https://ember-construction.com/images/Ember Construction.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://ember-construction.com/">
+        <meta name="twitter:title" content="Ember Construction | Professional Construction Services">
+        <meta name="twitter:description" content="Professional construction services for residential and commercial projects. Quality craftsmanship, on-time delivery, and expert solutions.">
+        <meta name="twitter:image" content="https://ember-construction.com/images/Ember Construction.png">
+
+        <!-- Local Business Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Ember Construction",
+          "image": "https://ember-construction.com/images/Ember Construction.png",
+          "description": "Professional construction services for residential and commercial projects",
+          "telephone": "+1234567890",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+          },
+          "sameAs": [],
+          "url": "https://ember-construction.com",
+          "priceRange": "$$"
+        }
+        </script>
+
+        <!-- Organization Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Ember Construction",
+          "url": "https://ember-construction.com",
+          "logo": "https://ember-construction.com/images/Ember Construction.png",
+          "description": "Professional construction services",
+          "telephone": "+1234567890",
+          "sameAs": []
+        }
+        </script>
+
         <link rel="icon" href="./images/Ember Construction.png" type="image/png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,105 +91,98 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="stylesheet" href="index.css">
 		<script defer src="index.js"></script>
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-XXXXXXXXXX');
+		</script>
 	</head>
-	<body class="bg-white text-black antialiased">
+	<body class="bg-white text-gray-900 antialiased font-sans">
 
-		<header class="w-full">
-		<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between h-1 gap-3">
-			<!-- Left: Logo + Company Name -->
-			<a href="./index.html" class="flex items-center gap-2 group flex-shrink-0">
-				<img src="./images/Ember Construction.png" alt="Brand Logo" class="h-8 sm:h-10 md:h-10 w-auto">
-				<span class="text-sm sm:text-sm md:text-base group-hover:text-orange transition duration-300" style="letter-spacing: 0.5px;">
-					    <span style="color: #d88728; font-weight: 700;">Ember</span>
-						<span style="color: #d88728; font-weight: 300;"> Construction</span>
-					</span>
-				</a>
+		<!-- NAVBAR -->
+		<nav class="fixed w-full bg-white shadow-md z-50 navbar-animate border-b border-gray-100">
+			<div class="w-full px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between items-center h-16 md:h-20">
+					<!-- LOGO -->
+					<a href="index.html" class="flex items-center group flex-shrink-0 min-w-0">
+						<img src="./images/Ember Construction.png" alt="Ember Logo" class="h-10 sm:h-12 w-auto hover:scale-110 transition-transform duration-300">
+						<span class="inline ml-2 text-sm sm:text-lg md:text-xl font-poppins whitespace-nowrap">
+							<span class="text-[#d88728] font-semibold">Ember</span>
+							<span class="text-[#d88728] font-regular">Construction</span>
+						</span>
+					</a>
 
-				<!-- Center: Navigation Links -->
-				<nav class="hidden md:flex items-center gap-6 xl:gap-8 flex-grow justify-center">
-					<a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#how-we-work">Process</a>
-					<a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#values">Values</a>
-					<a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#gallery">Gallery</a>
-				</nav>
+					<!-- DESKTOP MENU -->
+					<div class="hidden lg:flex items-center space-x-4 xl:space-x-8 flex-1 justify-center">
+						<a href="#how-we-work" class="text-gray-700 hover:text-[#d88728] transition duration-300 font-regular text-sm xl:text-base tracking-wide">Process</a>
+						<a href="#values" class="text-gray-700 hover:text-[#d88728] transition duration-300 font-regular text-sm xl:text-base tracking-wide">Values</a>
+						<a href="#contact" class="text-gray-700 hover:text-[#d88728] transition duration-300 font-regular text-sm xl:text-base tracking-wide">Contact</a>
+					</div>
 
-				<!-- Right: Phone Button + Mobile Toggle -->
-				<div class="flex items-center justify-end gap-2 sm:gap-4 lg:gap-6 ml-auto">
-					<a href="tel:+1234567890" class="hidden md:inline-block px-3 sm:px-4 py-2 text-xs sm:text-sm border rounded-lg transition duration-300" style="background-color: #d88728; color: white; border-color: #d88728;" onmouseover="this.style.backgroundColor='white'; this.style.color='#d88728';" onmouseout="this.style.backgroundColor='#d88728'; this.style.color='white';">+1 (234) 567-890</a>
-					<button class="md:hidden p-2 text-gray-700 transition duration-300 hover:text-orange" id="mobileMenuToggle" aria-label="menu" aria-expanded="false">
-						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<!-- CTA BUTTON -->
+					<div class="hidden lg:flex items-center flex-shrink-0">
+						<a href="tel:+1234567890" class="bg-[#d88728] text-white px-4 sm:px-6 py-2.5 rounded-lg hover:bg-[#c96d00] transition duration-300 transform hover:scale-105 shadow-md text-sm sm:text-base font-medium whitespace-nowrap inline-flex items-center gap-2">+1 (234) 567-890</a>
+					</div>
+
+					<!-- MOBILE MENU BUTTON -->
+					<button id="mobileMenuBtn" class="lg:hidden text-gray-700 hover:text-[#d88728] focus:outline-none focus:ring-2 focus:ring-[#d88728] focus:ring-offset-1 rounded p-1 transition duration-300" aria-label="Toggle menu">
+						<svg id="menuIcon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
 					</button>
 				</div>
-			</div>
 
-			<!-- Mobile Menu Overlay & Panel -->
-			<div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
-			<nav id="mobileMenu" class="mobile-menu">
-				<div class="mobile-menu-header">
-					<div class="mobile-menu-logo">
-						<img src="/images/Ember Construction.png" alt="Brand Logo" class="h-10 w-auto">
-						<span style="color: #d88728; font-weight: 700;">Ember</span>
-						<span style="color: #d88728; font-weight: 300;"> Construction</span>
+				<!-- MOBILE MENU -->
+				<div id="mobileMenu" class="hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out origin-top lg:hidden">
+					<div class="pb-4 space-y-1 bg-gray-50 border-t border-gray-100 flex flex-col">
+						<a href="#how-we-work" class="block w-full text-center px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#d88728] rounded transition duration-300 font-regular text-base">Process</a>
+						<a href="#values" class="block w-full text-center px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#d88728] rounded transition duration-300 font-regular text-base">Values</a>
+						<a href="#contact" class="block w-full text-center px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#d88728] rounded transition duration-300 font-regular text-base">Contact</a>
+						<a href="tel:+1234567890" class="m-3 inline-flex justify-center items-center bg-[#d88728] text-white px-6 py-3 rounded-lg hover:bg-[#c96d00] transition duration-300 shadow-md font-medium gap-2 text-base">+1 (234) 567-890</a>
 					</div>
-					<button id="mobileMenuClose" class="p-1 text-gray-700 hover:text-orange transition duration-300" aria-label="close menu">
-						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-						</svg>
-					</button>
 				</div>
-				<div class="mobile-menu-items">
-					<a href="#how-we-work" class="mobile-menu-item">Process</a>
-					<a href="#values" class="mobile-menu-item">Values</a>
-					<a href="#gallery" class="mobile-menu-item">Gallery</a>
-				</div>
-				<div class="mobile-menu-footer">
-					<a href="tel:+1234567890" class="mobile-menu-call">
-						<svg class="phone-icon" fill="currentColor" viewBox="0 0 24 24">
-							<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-						</svg>
-						<span>+1 (234) 567-890</span>
-					</a>
-				</div>
-			</nav>
-		</header>
+			</div>
+		</nav>
 
-		<main>
+		<main class="pt-16 md:pt-20 font-sans">
 			<section class="hero-section">
-				<div class="hero-background" style="background-image: url('/images/hero-image.jfif');"></div>
+				<div class="hero-background" style="background-image: url('/images/hero-section');"></div>
 				<div class="hero-overlay"></div>
 
 				<div class="hero-content">
 					<div class="hero-wrapper grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 						<div class="hero-left">
-							<h1>End-to-End Construction for Single-Family Assets</h1>
+							<h1>End to End Construction for Single-Family Assets</h1>
 							<p>Ember Construction manages scopes, permits, execution, and quality control delivering projects on time and on budget.</p>
 						</div>
 
-						<div class="hero-right">
-							<h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Get Started</h2>
-							<p class="form-subtitle text-gray-600 mb-6 text-sm md:text-base">Fill in the form below and we'll be in touch shortly</p>
+						<div class="hero-right hero-form-container">
+							<div class="mb-6">
+							<h2 class="text-2xl font-semibold font-sans">Get Started</h2>
+							<p class="text-sm text-gray-600 mt-1 font-regular">Fill in the form below and we'll be in touch shortly</p>
 
-								<form id="contactForm" class="space-y-5">
-									<div>
-										<label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-										<input type="text" id="name" name="name" class="w-full text-sm md:text-base px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition placeholder-gray-400" placeholder="John Doe" required>
-									</div>
+							<form id="contactForm" class="space-y-4">
+								<div>
+									<label for="name" class="block text-sm font-medium text-gray-700 font-regular">Full Name <span class="text-[#d88728]">*</span></label>
+									<input type="text" id="name" name="name" class="mt-2 w-full px-4 py-2 text-sm border border-gray-200 rounded-lg bg-gray-50 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-orange-100 focus:border-[#d88728] font-regular" placeholder="John Doe" required>
+								</div>
 
-									<div>
-										<label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-										<input type="email" id="email" name="email" class="w-full text-sm md:text-base px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition placeholder-gray-400" placeholder="name@domain.com" required>
-									</div>
+								<div>
+									<label for="email" class="block text-sm font-medium text-gray-700 font-regular">Email Address <span class="text-[#d88728]">*</span></label>
+									<input type="email" id="email" name="email" class="mt-2 w-full px-4 py-2 text-sm border border-gray-200 rounded-lg bg-gray-50 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-orange-100 focus:border-[#d88728] font-regular" placeholder="name@domain.com" required>
+								</div>
 
-									<div>
-										<label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-										<input type="tel" id="phone" name="phone" class="w-full text-sm md:text-base px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition placeholder-gray-400" placeholder="(123) 456-7890">
-									</div>
+								<div>
+									<label for="phone" class="block text-sm font-medium text-gray-700 font-regular">Phone Number</label>
+									<input type="tel" id="phone" name="phone" class="mt-2 w-full px-4 py-2 text-sm border border-gray-200 rounded-lg bg-gray-50 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-orange-100 focus:border-[#d88728] font-regular" placeholder="(123) 456-7890">
+								</div>
 
-									<div>
-										<button type="submit" class="w-full bg-orange hover:bg-orange-dark text-white font-semibold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105 shadow-md hover:shadow-lg">Request Quote</button>
-									</div>
-								</form>
+								<button type="submit" class="w-full py-3 px-4 text-sm font-semibold text-white bg-gradient-to-r from-[#d88728] to-[#e8985a] rounded-lg uppercase tracking-wider shadow hover:shadow-lg transition duration-300">Request Quote</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -172,13 +218,13 @@
 								<article class="work-card">
 									<div class="card-number">01.</div>
 									<h3 class="card-title">Innovation at the Core</h3>
-									<p class="card-desc">We thrive on pushing boundaries. By embracing cutting-edge technologies, materials, and methodologies, we create designs that are not only visually stunning but also functionally transformative.</p>
+									<p class="card-desc">We thrive on pushing boundaries. By embracing cutting edge technologies, materials, and methodologies, we create designs that are not only visually stunning but also functionally transformative.</p>
 								</article>
 
 								<article class="work-card">
 									<div class="card-number">02.</div>
 									<h3 class="card-title">Sustainability as a Standard</h3>
-									<p class="card-desc">Our team integrates sustainable practices into every stage of the process—creating spaces that serve their purpose today and contribute to a healthier tomorrow.</p>
+									<p class="card-desc">Our team integrates sustainable practices into every stage of the process creating spaces that serve their purpose today and contribute to a healthier tomorrow.</p>
 								</article>
 
 								<article class="work-card">
@@ -255,7 +301,7 @@
 						<div class="value-card">
 							<h3 class="value-card-title">Innovation & Excellence</h3>
 							<p class="value-card-subtitle">Forward Thinking Solutions</p>
-							<p class="value-card-desc">We embrace innovation to deliver forward-thinking solutions. By combining cutting-edge technology with creative problem-solving, we transform challenges into opportunities and create spaces that inspire.</p>
+							<p class="value-card-desc">We embrace innovation to deliver forward thinking solutions. By combining cutting edge technology with creative problem-solving, we transform challenges into opportunities and create spaces that inspire.</p>
 						</div>
 					</div>
 				</div>
@@ -289,58 +335,115 @@
 					</div>
 				</div>
 			</section>
-<!-- cta -->
-			<section class="cta-section">
-				<div class="cta-container">
+
+			<!-- Advanced CTA Section -->
+			<section id="contact" class="cta-section">
+				<div class="cta-container max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
+					<!-- CTA Left - Content -->
 					<div class="cta-left">
-						<h2>We Buy Houses at Any Price in any condition!</h2>
-						<div class="cta-features">
-							<div class="feature">
-								<h3>Avoid Paying Unnecessary Fees</h3>
-								<p>Avoid paying any agent thousands in unnecessary fees. Ember Construction has helped hundreds of homeowners sell their houses fast.</p>
-							</div>
-							<div class="feature">
-								<h3>No Need For Remodeling Or Repairs</h3>
-								<p>When you choose to work with Ember Construction, there's no need to remodel or repair your house. We'll handle repairs, disposals, and cleaning!</p>
+						<div class="cta-content-wrapper">
+							<h2 class="cta-title">We Buy Houses at Any Price</h2>
+							<p class="cta-subtitle">In Any Condition</p>
+
+							<div class="cta-features">
+								<div class="feature-item">
+									<div class="feature-icon">
+										<svg fill="currentColor" viewBox="0 0 24 24">
+											<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+										</svg>
+									</div>
+									<div>
+										<h3 class="feature-title">Avoid Unnecessary Fees</h3>
+										<p class="feature-desc">No agent commissions. We buy directly, saving you thousands in unnecessary fees.</p>
+									</div>
+								</div>
+
+								<div class="feature-item">
+									<div class="feature-icon">
+										<svg fill="currentColor" viewBox="0 0 24 24">
+											<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+										</svg>
+									</div>
+									<div>
+										<h3 class="feature-title">No Repairs Needed</h3>
+										<p class="feature-desc">Sell as is. We handle all repairs, renovations, and cleaning for you.</p>
+									</div>
+								</div>
+
+								<div class="feature-item">
+									<div class="feature-icon">
+										<svg fill="currentColor" viewBox="0 0 24 24">
+											<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+										</svg>
+									</div>
+									<div>
+										<h3 class="feature-title">Fast & Fair Offers</h3>
+										<p class="feature-desc">Get a fair cash offer within 24 hours with no hassle.</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 
-											</div>
-												</section>
+					<!-- CTA Right - Form -->
+					<div class="cta-right">
+						<div class="cta-form-wrapper">
+							<div class="mb-6">
+								<h2 class="text-2xl font-semibold font-sans">Get Your Quote</h2>
+								<p class="text-sm text-gray-600 mt-1 font-regular">Fill in the form below and we'll be in touch shortly</p>
+							</div>
 
+							<form id="contactFormCTA" class="space-y-4">
+								<div>
+									<label for="name-cta" class="block text-sm font-medium text-gray-700 font-regular">Full Name <span class="text-[#d88728]">*</span></label>
+									<input type="text" id="name-cta" name="name" class="mt-2 w-full px-4 py-2 text-sm border border-gray-200 rounded-lg bg-gray-50 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-orange-100 focus:border-[#d88728] font-regular" placeholder="John Doe" required>
+								</div>
+
+								<div>
+									<label for="email-cta" class="block text-sm font-medium text-gray-700 font-regular">Email Address <span class="text-[#d88728]">*</span></label>
+									<input type="email" id="email-cta" name="email" class="mt-2 w-full px-4 py-2 text-sm border border-gray-200 rounded-lg bg-gray-50 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-orange-100 focus:border-[#d88728] font-regular" placeholder="name@domain.com" required>
+								</div>
+
+								<div>
+									<label for="phone-cta" class="block text-sm font-medium text-gray-700 font-regular">Phone Number</label>
+									<input type="tel" id="phone-cta" name="phone" class="mt-2 w-full px-4 py-2 text-sm border border-gray-200 rounded-lg bg-gray-50 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-orange-100 focus:border-[#d88728] font-regular" placeholder="(123) 456-7890">
+								</div>
+
+								<button type="submit" class="w-full py-3 px-4 text-sm font-semibold text-white bg-gradient-to-r from-[#d88728] to-[#e8985a] rounded-lg uppercase tracking-wider shadow hover:shadow-lg transition duration-300">Request Quote</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<!-- Decorative Elements -->
+				<div class="cta-decoration-circle circle-1"></div>
+				<div class="cta-decoration-circle circle-2"></div>
+			</section>
 		</main>
 
-		<footer class="bg-neutral-900 text-slate-400 py-12 text-center">
+		<footer class="bg-neutral-900 text-slate-400 py-12 text-center font-sans">
         <div class="max-w-3xl mx-auto px-6">
 
-            <!-- LOGO + NAME -->
-            <a href="#home" class="inline-block mb-4">
-                <img src="/images/Ember Construction.png"
-                    alt="Ember Construction Logo" class="h-16 mx-auto mb-2">
-                <span class="font-bold text-xl" style="color: #d88728;">Ember <span
-                        style="font-weight: 100;">Construction</span></span>
-            </a>
+			<!-- LOGO + NAME -->
+			<a href="#home" class="inline-block mb-4 group">
+				<img src="/images/Ember Construction.png" alt="Ember Construction Logo" class="h-16 mx-auto mb-2 group-hover:scale-105 transition duration-300">
+				<span class="text-xl font-semibold text-[#d88728] font-sans">Ember <span class="font-regular text-[#d88728]">Construction</span></span>
+			</a>
 
             <!-- TAGLINE -->
-            <p class="text-slate-300 mb-6 leading-relaxed">
-                Culturally fluent real estate services helping families buy, sell, and thrive with clarity and
-                confidence.
+            <p class="text-slate-300 mb-6 leading-relaxed font-regular text-sm md:text-base">
+                Professional construction services delivering excellence in every project.
             </p>
 
             <!-- Separator -->
             <div class="w-24 mx-auto my-6 border-t border-slate-700 opacity-60"></div>
 
-            <!-- COPYRIGHT + LINKS -->
-            <div class="flex items-center justify-center space-x-4 text-sm">
-                <p class="text-slate-300">© <span id="currentYear">2025</span> <span
-                        style="color: #d88728; font-weight: bold;"> Ember <span
-                            style="font-weight: 300;">Construction</span></span></p>
-                <span class="text-slate-600">•</span>
-                <a class='text-slate-300 hover:text-[#d88728] transition' href="./privacypolicy.html">
-                    Privacy Policy
-                </a>
-            </div>
+			<!-- COPYRIGHT + LINKS -->
+			<div class="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm font-regular">
+				<p class="text-slate-300">© <span id="currentYear">2025</span> <span class="text-[#d88728] font-semibold">Ember <span class="font-regular text-[#d88728]">Construction</span></span></p>
+				<span class="hidden sm:inline text-slate-600">•</span>
+				<a class="text-slate-300 hover:text-[#d88728] transition duration-300 font-regular" href="./privacypolicy.html">Privacy Policy</a>
+			</div>
 
         </div>
     </footer>

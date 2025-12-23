@@ -1,307 +1,293 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy - Ember Construction</title>
-    <meta name="description" content="Privacy Policy for Ember Construction" />
-    <link rel="icon" href="./images/Ember Construction.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = { theme: { extend: { colors: { 'primary-white': '#ffffff','primary-black': '#000000','primary-light-gray': '#f5f5f5','accent-orange': '#d88728','accent-orange-light': '#e8985a','accent-orange-dark': '#c96d00', orange: '#d88728' }, fontFamily: { sans: ['Poppins','system-ui','sans-serif'], serif: ['Playfair Display','serif'] } } } }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index.css">
-    <script defer src="index.js"></script>
-  </head>
-  <body class="bg-white text-black antialiased">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Privacy Policy – Ember Construction | Professional Construction Services</title>
+<meta name="description" content="Privacy Policy for Ember Construction. Learn how we collect, use, and protect your personal information.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ember Construction">
+<link rel="canonical" href="https://ember-construction.com/privacypolicy.html">
 
-    <!-- Header / Navbar (copied from index for consistent site navigation) -->
-    <header class="w-full">
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between h-1 gap-3">
-        <!-- Left: Logo + Company Name -->
-        <a href="./index.html" class="flex items-center gap-2 group flex-shrink-0">
-          <img src="./images/Ember Construction.png" alt="Brand Logo" class="h-8 sm:h-10 md:h-10s w-auto">
-          <span class="text-sm sm:text-sm md:text-base group-hover:text-orange transition duration-300" style="letter-spacing: 0.5px;">
-              <span style="color: #d88728; font-weight: 700;">Ember</span>
-              <span style="color: #d88728; font-weight: 300;"> Construction</span>
-            </span>
-        </a>
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ember-construction.com/privacypolicy.html">
+<meta property="og:title" content="Privacy Policy – Ember Construction">
+<meta property="og:description" content="Privacy Policy for Ember Construction. Learn how we collect, use, and protect your personal information.">
+<meta property="og:image" content="https://ember-construction.com/images/Ember Construction.png">
 
-        <!-- Center: Navigation Links
-        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 flex-grow justify-center">
-          <a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#how-we-work">Process</a>
-          <a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#values">Values</a>
-          <a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#gallery">Gallery</a>
-        </nav> -->
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://ember-construction.com/privacypolicy.html">
+<meta name="twitter:title" content="Privacy Policy – Ember Construction">
+<meta name="twitter:description" content="Privacy Policy for Ember Construction. Learn how we collect, use, and protect your personal information.">
 
-        <!-- Right: Phone Button + Mobile Toggle -->
-        <div class="flex items-center justify-end gap-2 sm:gap-4 lg:gap-6 ml-auto">
-          <a href="tel:+1234567890" class="hidden md:inline-block px-3 sm:px-4 py-2 text-xs sm:text-sm border rounded-lg transition duration-300" style="background-color: #d88728; color: white; border-color: #d88728;" onmouseover="this.style.backgroundColor='white'; this.style.color='#d88728';" onmouseout="this.style.backgroundColor='#d88728'; this.style.color='white';">+1 (234) 567-890</a>
-          <button class="md:hidden p-2 text-gray-700 transition duration-300 hover:text-orange" id="mobileMenuToggle" aria-label="menu" aria-expanded="false">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
+<link rel="icon" type="image/x-icon" href="images/Ember Construction.png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
 
-      <!-- Mobile Menu Overlay & Panel -->
-      <div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
-      <nav id="mobileMenu" class="mobile-menu">
-        <div class="mobile-menu-header">
-          <div class="mobile-menu-logo">
-            <img src="/images/Ember Construction.png" alt="Brand Logo" class="h-10 w-auto">
-            <span style="color: #d88728; font-weight: 700;">Ember</span>
-            <span style="color: #d88728; font-weight: 300;"> Construction</span>
-          </div>
-          <button id="mobileMenuClose" class="p-1 text-gray-700 hover:text-orange transition duration-300" aria-label="close menu">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-        </div>
-        <!-- <div class="mobile-menu-items">
-          <a href="#how-we-work" class="mobile-menu-item">Process</a>
-          <a href="#values" class="mobile-menu-item">Values</a>
-          <a href="#gallery" class="mobile-menu-item">Gallery</a>
-        </div> -->
-        <div class="mobile-menu-footer">
-          <a href="tel:+1234567890" class="mobile-menu-call">
-            <svg class="phone-icon" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-            </svg>
-            <span>+1 (234) 567-890</span>
-          </a>
-        </div>
-      </nav>
-    </header>
+  <style>
 
-    <main>
-      <!-- Page header/banner matching site theme -->
-      <section class="py-12 sm:py-16 md:py-20" style="background: linear-gradient(90deg,#d88728,#d88728);">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white" style="font-family: 'Playfair Display', serif;">Privacy Policy</h1>
-          <p class="mt-2 sm:mt-3 text-base sm:text-lg md:text-xl font-medium text-white">Ember Construction</p>
-        </div>
-      </section>
+    body { background:#fff; color:#1a1a1a; line-height:1.8; margin:0; padding-top:var(--header-height); }
 
-      <section class="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 md:py-16">
-        <!-- Privacy policy content with Tailwind utilities -->
-        <div class="font-sans text-gray-800 leading-relaxed">
-          <p class="text-xs sm:text-sm md:text-base mb-5 sm:mb-6"><strong class="font-bold">Last Updated:</strong> <span class="font-medium">October 10, 2025</span></p>
+    .heading { background: linear-gradient(to right, #d88728, #e8985a); color:#ffffff; padding:150px 20px; text-align:center; margin-top: 0; justify-content: center; display: flex; flex-direction: column; align-items: center; }
+    .heading h1 { margin-bottom:5px; font-size:clamp(1.6rem,4vw,3rem); font-weight: 800; }
+    .heading p { font-size:clamp(0.95rem,2.2vw,1.1rem); opacity:0.85; font-weight:700; margin:0; }
 
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-            This privacy policy has been compiled to better serve those who are concerned with how their <strong class="font-bold">'Personally Identifiable Information' (PII)</strong> is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
-          </p>
+    /* Main content container */
+    .all-section { max-width:900px; margin:1rem auto; padding:2.5rem 20px 4rem; box-sizing:border-box; }
+    .all-section h2 { margin-top:2rem; margin-bottom:1rem; font-size:1.3rem; color:#0a0f14; font-weight: 500; }
+    .all-section h3 { margin-top:1.2rem; margin-bottom:1rem; font-size:1.1rem; color:#333; }
+    .all-section ul { margin-left:1.5rem; padding-left:1rem; list-style-type:disc; list-style-position:outside; }
+    .all-section li { margin-bottom:0.45rem; margin-top:0.7rem; }
+    .all-section p { margin-bottom:1rem; margin-top:0.7rem; }
+    .all-section a { word-break:break-word; overflow-wrap:anywhere; }
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">1. What personal information do we collect from the people that visit our blog, website or app?</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-            When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.
-          </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">2. When Do We Collect Information?</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-           We collect information from you when you register on our site, fill out a form, Use Live Chat or enter information on our site.
-          Provide us with feedback on our products or services.
-          </p>
+    img { max-width:100%; height:auto; display:block; }
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">3. How Do We Use Your Information?</h2>
-          <p class="text-sm sm:text-base md:text-base mb-4 sm:mb-5 md:mb-6 leading-7 sm:leading-8">We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:</p>
-          <ul class="pl-4 sm:pl-6 md:pl-8 mb-5 sm:mb-6 space-y-2 sm:space-y-3">
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• To improve our website in order to better serve you.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• To allow us to better service you in responding to your customer service requests.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• To administer a contest, promotion, survey or other site feature.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• To quickly process your transactions.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• To ask for ratings and reviews of services or products.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• To follow up with them after correspondence (live chat, email or phone inquiries).</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• To send marketing materials and other product information through calls, emails, and text messages.</li>
-          </ul>
+    footer { padding-bottom:2.5rem; }
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">4. How Do We Protect Your Information?</h2>
-          <ul class="pl-4 sm:pl-6 md:pl-8 mb-5 sm:mb-6 space-y-2 sm:space-y-3">
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• We do not use vulnerability scanning and/or scanning to PCI standards.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• We only provide articles and information. We never ask for credit card numbers.</li>
-          </ul>
+    .company-name { font-size: 1.3rem ; }
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">5. We use regular Malware Scanning.</h2>
-          <ul class="pl-4 sm:pl-6 md:pl-8 mb-5 sm:mb-6 space-y-2 sm:space-y-3">
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">
-              • Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.
-            </li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">
-              • We implement a variety of security measures when a user enters, submits, or accesses their information to maintain the safety of your personal information.
-            </li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">
-              • For your convenience we may store your credit card information kept for more than 60 days in order to expedite future orders, and to automate the billing process.
-            </li>
-          </ul>
+    .phone-link { display:inline-block; background:#d88728; color:#ffffff; padding:0.6rem 0.7rem; border-radius:0.5rem; font-weight:600; text-decoration:none;}
+    .phone-link:hover { background:#c96d00; }
+    /* Media Queries */
+    @media (max-width:768px) {
+      .heading h1 { font-size:2rem; }
+      .heading p { font-size:1rem; }
+      .phone-link { font-size: 0.6em ; }
+      .company-name { font-size: 0.8rem ; }
+    }
+  </style>
+</head>
+<body>
+ <!-- ================= NAV ================= -->
+<header class="fixed w-full bg-white shadow z-50 site-header" id="siteHeader" role="banner">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2 font-bold company-name">
+      <a class='flex items-center space-x-2' href='/'>
+        <span>
+          <img src="images/Ember Construction.png" alt="Ember Construction Logo" class="h-8 inline-block">
+        </span>
+        <span style="color:#d88728 ; font-weight: bold;">Ember <span style="font-weight: 400;">Construction</span></span>
+      </a>
+    </div>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">6. Do We Use Cookies?</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-            Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.
-          </p>
+    <nav class="flex items-center space-x-8" aria-label="Primary">
+      <a href="tel:+11234567890" class="font-semibold phone-link small">(123) 456-7890</a>
+    </nav>
+  </div>
+</header>
 
-          <strong class="text-sm sm:text-base md:text-base font-bold block mb-3 sm:mb-4">We use cookies to:</strong>
-          <ul class="pl-4 sm:pl-6 md:pl-8 mb-5 sm:mb-6 space-y-2 sm:space-y-3">
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Understand and save user's preferences for future visits.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Keep track of advertisements.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">
-              • Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf.
-            </li>
-          </ul>
-          <p class="text-sm sm:text-base md:text-base mb-4 sm:mb-5 md:mb-6 leading-7 sm:leading-8">
-            You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser’s Help Menu to learn the correct way to modify your cookies.
-          </p>
+  <header class="heading">
+    <h1>Privacy Policy</h1>
+    <p>Ember Construction</p>
+  </header>
 
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-            If you turn cookies off, some of the features that make your site experience more efficient may not function properly. It won’t affect the user’s experience that make your site experience more efficient and may not function properly.
-          </p>
+ <main class="all-section main-content">
+  <p><strong>Last Updated:</strong> <span style="font-weight:500;">October 10, 2025</span></p>
+  <br>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">7. Third-Party Disclosure</h2>
-          <p class="text-sm sm:text-base md:text-base mb-4 sm:mb-5 md:mb-6 leading-7 sm:leading-8">
-            We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when it’s release is appropriate to comply with the law, enforce our site policies, or protect ours or others’ rights, property or safety.
-          </p>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-            However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
-          </p>
+  <p>
+    This privacy policy has been compiled to better serve those who are concerned with how their <strong>‘Personally Identifiable Information’ (PII)</strong> is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+  </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">8. Third-Party Links</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-           Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
-          </p>
+  <h2>1. What personal information do we collect from the people that visit our blog, website or app?</h2>
+  <p>
+    When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.
+  </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">9. Google Advertising</h2>
-          <p class="text-sm sm:text-base md:text-base mb-4 sm:mb-5 md:mb-6 leading-7 sm:leading-8">
-           Google's advertising requirements can be summed up by Google's Advertising Principles. They are put in place to provide a positive experience for users. <a href="https://support.google.com/adwordspolicy/answer/1316548?hl=en" target="_blank" class="text-orange hover:text-orange-dark transition">https://support.google.com/adwordspolicy/answer/1316548?hl=en</a>.
-          </p>
-          <strong class="text-sm sm:text-base md:text-base font-bold block mb-4 sm:mb-5">We use Google AdSense Advertising on our website.</strong>
+  <h2>2. When Do We Collect Information?</h2>
+  <p>
+   We collect information from you when you register on our site, fill out a form, Use Live Chat or enter information on our site.
+Provide us with feedback on our products or services.
+  </p>
 
-          <p>
-            Google, as a third-party vendor, uses cookies to serve ads on our site. Google’s use of the DART cookie enables it to serve ads to our users based on previous visits to our site and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content Network privacy policy.
-          </p>
+  <h2>3. How Do We Use Your Information?</h2>
+  <p>We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:
+</p>
+  <ul>
+    <li>To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested.</li>
+    <li>To improve our website in order to better serve you.</li>
+    <li>To allow us to better service you in responding to your customer service requests.</li>
+    <li>To administer a contest, promotion, survey or other site feature.</li>
+    <li>To quickly process your transactions.</li>
+    <li>To ask for ratings and reviews of services or products.</li>
+    <li>To follow up with them after correspondence (live chat, email or phone inquiries).</li>
+    <li>To send marketing materials and other product information through calls, emails, and text messages.</li>
+  </ul>
 
-          <strong>We have implemented the following:</strong>
-          <ul>
-            <li>Remarketing with Google AdSense</li>
-            <li>Google Display Network Impression Reporting</li>
-            <li>Demographics and Interests Reporting</li>
-          </ul>
-          <p>
-            We, along with third-party vendors such as Google use first-party cookies (such as the Google Analytics cookies) and third-party cookies (such as the DoubleClick cookie) or other third-party identifiers together to compile data regarding user interactions with ad impressions and other ad service functions as they relate to our website.
-          </p>
+  <h2>4. How Do We Protect Your Information?</h2>
+  <ul>
+    <li>We do not use vulnerability scanning and/or scanning to PCI standards.</li>
+    <li>We only provide articles and information. We never ask for credit card numbers.</li>
+  </ul>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">10. Opting out:</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">Users can set preferences for how Google advertises to you using the Google Ad Settings page. Alternatively, you can opt out by visiting the Network Advertising Initiative Opt Out page or by using the Google Analytics Opt Out Browser add on.</p>
+  <h2>5. We use regular Malware Scanning.</h2>
+  <ul>
+    <li>
+      Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.
+    </li>
+    <li>
+      We implement a variety of security measures when a user enters, submits, or accesses their information to maintain the safety of your personal information.
+    </li>
+    <li>
+      For your convenience we may store your credit card information kept for more than 60 days in order to expedite future orders, and to automate the billing process.
+    </li>
+  </ul>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">11. California Online Privacy Protection Act (CalOPPA)</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-            CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law's reach well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared.<br class="hidden sm:block" />
-            See more at: <a href="http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf" target="_blank" class="text-orange hover:text-orange-dark transition">http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf</a>
-          </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">12. According to CalOPPA, we agree to the following:</h2>
-          <p class="text-sm sm:text-base md:text-base mb-3 sm:mb-4 leading-7 sm:leading-8">Users can visit our site anonymously.</p>
-          <p class="text-sm sm:text-base md:text-base mb-3 sm:mb-4 leading-7 sm:leading-8">Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website.</p>
-          <p class="text-sm sm:text-base md:text-base mb-4 sm:mb-5 md:mb-6 leading-7 sm:leading-8">Our Privacy Policy link includes the word 'Privacy' and can easily be found on the page specified above.</p>
+  <h2>6. Do We Use Cookies?</h2>
+  <p>
+    Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.
+  </p>
 
-          <strong class="text-sm sm:text-base md:text-base font-bold block mb-3 sm:mb-4">You will be notified of any Privacy Policy changes:</strong>
-          <ul class="pl-4 sm:pl-6 md:pl-8 mb-5 sm:mb-6 space-y-2 sm:space-y-3">
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• On our Privacy Policy Page</li>
-          </ul>
-          <strong class="text-sm sm:text-base md:text-base font-bold block mb-3 sm:mb-4">Can change your personal information:</strong>
-          <ul class="pl-4 sm:pl-6 md:pl-8 mb-5 sm:mb-6 space-y-2 sm:space-y-3">
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• By emailing us</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• By calling us</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• By logging in to your account</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• By chatting with us or by sending us a support ticket</li>
-          </ul>
+  <strong>We use cookies to:</strong>
+  <ul>
+    <li>Understand and save user’s preferences for future visits.</li>
+    <li>Keep track of advertisements.</li>
+    <li>
+      Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf.
+    </li>
+  </ul>
+  <p>
+    You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser’s Help Menu to learn the correct way to modify your cookies.
+  </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">13. How does our site handle Do Not Track signals?</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-           We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.
-          </p>
+  <p>
+    If you turn cookies off, some of the features that make your site experience more efficient may not function properly. It won’t affect the user’s experience that make your site experience more efficient and may not function properly.
+  </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">14. Does our site allow third-party behavioral tracking?</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">
-            It’s also important to note that we allow third-party behavioral tracking.
-          </p>
+  <h2>7. Third-Party Disclosure</h2>
+  <p>
+    We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when it’s release is appropriate to comply with the law, enforce our site policies, or protect ours or others’ rights, property or safety.
+  </p>
+  <p>
+    However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+  </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">15. COPPA (Children Online Privacy Protection Act):</h2>
-          <p class="text-sm sm:text-base md:text-base mb-4 sm:mb-5 md:mb-6 leading-7 sm:leading-8">
-            When it comes to the collection of personal information from children under the age of 13 years old, the Children's Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States' consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children's privacy and safety online.
-          </p>
-          <strong class="text-sm sm:text-base md:text-base font-bold block mb-3 sm:mb-4">Do we let third-parties, including ad networks or plug-ins collect PII from children under 13?</strong>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">We do not specifically market to children under the age of 13 years old.</p>
+  <h2>8. Third-Party Links</h2>
+  <p>
+   Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
+  </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">16. Fair Information Practices:</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.</p>
+  <h2>9. Google Advertising</h2>
+  <p>
+   Google’s advertising requirements can be summed up by Google’s Advertising Principles. They are put in place to provide a positive experience for users.
+   <a href="https://support.google.com/adwordspolicy/answer/1316548?hl=en" target="_blank" rel="noopener noreferrer">https://support.google.com/adwordspolicy/answer/1316548?hl=en</a>.
+  </p>
+<strong>We use Google AdSense Advertising on our website.</strong>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">17. In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur:</h2>
-          <p class="text-sm sm:text-base md:text-base mb-3 sm:mb-4 leading-7 sm:leading-8">Within 7 business days we will notify the users via in-site notification.</p>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors.</p>
+<p>
+  Google, as a third-party vendor, uses cookies to serve ads on our site. Google’s use of the DART cookie enables it to serve ads to our users based on previous visits to our site and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content Network privacy policy.
+</p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">18. CAN SPAM Act:</h2>
-          <p class="text-sm sm:text-base md:text-base mb-5 sm:mb-6 leading-7 sm:leading-8">The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.</p>
+  <strong>We have implemented the following:</strong>
+  <ul>
+    <li>Remarketing with Google AdSense</li>
+    <li>Google Display Network Impression Reporting</li>
+    <li>Demographics and Interests Reporting</li>
+  </ul>
+  <p>
+    We, along with third-party vendors such as Google use first-party cookies (such as the Google Analytics cookies) and third-party cookies (such as the DoubleClick cookie) or other third-party identifiers together to compile data regarding user interactions with ad impressions and other ad service functions as they relate to our website.
+  </p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">19. We collect your email address in order to:</h2>
-          <ul class="pl-4 sm:pl-6 md:pl-8 mb-5 sm:mb-6 space-y-2 sm:space-y-3">
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Send information, respond to inquiries, and/or other requests or questions.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Send you additional information related to your product and/or service.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.</li>
-          </ul>
+  <h2>10. Opting out:</h2>
+  <p>Users can set preferences for how Google advertises to you using the Google Ad Settings page. Alternatively, you can opt out by visiting the Network Advertising Initiative Opt Out page or by using the Google Analytics Opt Out Browser add on.</p>
 
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 mt-6 sm:mt-8 md:mt-10 leading-snug" style="font-family: 'Playfair Display', serif;">20. To be in accordance with CANSPAM, we agree to the following:</h2>
-          <ul class="pl-4 sm:pl-6 md:pl-8 mb-5 sm:mb-6 space-y-2 sm:space-y-3">
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Not use false or misleading subjects or email addresses.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Identify the message as an advertisement in some reasonable way.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Include the physical address of our business or site headquarters.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Monitor third-party email marketing services for compliance, if one is used.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Honor opt-out/unsubscribe requests quickly.</li>
-            <li class="text-sm sm:text-base md:text-base leading-6 sm:leading-7">• Allow users to unsubscribe by using the link at the bottom of each email.</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+  <h2>11. California Online Privacy Protection Act (CalOPPA)</h2>
+  <p>
+    CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law’s reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared.<br>See more at: <a href="http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf" target="_blank">
+      http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf
+    </a>
+  </p>
 
-    <!-- Footer (same as index) -->
+  <h2>12. According to CalOPPA, we agree to the following:</h2>
+  <p>Users can visit our site anonymously.</p>
+  <p>Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website.</p>
+  <p>Our Privacy Policy link includes the word ‘Privacy’ and can easily be found on the page specified above.</p>
 
-		<footer class="bg-neutral-900 text-slate-400 py-12 text-center">
-        <div class="max-w-3xl mx-auto px-6">
+  <strong>You will be notified of any Privacy Policy changes:</strong>
+  <ul>
+    <li>On our Privacy Policy Page</li>
+    </ul>
+    <strong>Can change your personal information:</strong>
+    <ul>
+      <li>By emailing us</li>
+      <li>By calling us</li>
+      <li>By logging in to your account</li>
+      <li>By chatting with us or by sending us a support ticket</li>
+    </ul>
 
-            <!-- LOGO + NAME -->
-            <a href="#home" class="inline-block mb-4">
-                <img src="/images/Ember Construction.png"
-                    alt="Ember Construction Logo" class="h-16 mx-auto mb-2">
-                <span class="font-bold text-xl" style="color: #d88728;">Ember <span
-                        style="font-weight: 100;">Construction</span></span>
-            </a>
+  <h2>13. How does our site handle Do Not Track signals?</h2>
+  <p>
+    We honor Do Not Track signals and do not plant cookies or use advertising when a Do Not Track (DNT) browser mechanism is in place.
+  </p>
 
-            <!-- TAGLINE -->
-            <p class="text-slate-300 mb-6 leading-relaxed">
-                Culturally fluent real estate services helping families buy, sell, and thrive with clarity and
-                confidence.
-            </p>
+  <h2>14. Does our site allow third-party behavioral tracking?</h2>
+  <p>
+    It’s also important to note that we allow third-party behavioral tracking.
+  </p>
 
-            <!-- Separator -->
-            <div class="w-24 mx-auto my-6 border-t border-slate-700 opacity-60"></div>
 
-            <!-- COPYRIGHT + LINKS -->
-            <div class="flex items-center justify-center space-x-4 text-sm">
-                <p class="text-slate-300">© <span id="currentYear">2025</span> <span
-                        style="color: #d88728; font-weight: bold;"> Ember <span
-                            style="font-weight: 300;">Construction</span></span></p>
-                <span class="text-slate-600">•</span>
-                <a class='text-slate-300 hover:text-[#d88728] transition' href="./privacypolicy.html">
-                    Privacy Policy
-                </a>
-            </div>
+  <h2>15. COPPA (Children Online Privacy Protection Act):</h2>
+  <p>
+    When it comes to the collection of personal information from children under the age of 13 years old, the Children’s Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States’ consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children’s privacy and safety online.
+  </p>
+  <strong>Do we let third-parties, including ad networks or plug-ins collect PII from children under 13?</strong>
+  <p>We do not specifically market to children under the age of 13 years old.
+  </p>
 
-        </div>
-    </footer>
+  <h2>16. Fair Information Practices:</h2>
+  <p>The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.</p>
 
-  </body>
+  <h2>17. In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur:</h2>
+<p>Within 7 business days we will notify the users via in-site notification.</p>
+<p>We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors.</p>
+
+<h2>18. CAN SPAM Act:</h2>
+<p>The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.</p>
+
+<h2>19. We collect your email address in order to:</h2>
+<ul>
+  <li>Send information, respond to inquiries, and/or other requests or questions.</li>
+  <li>Send you additional information related to your product and/or service.</li>
+  <li>Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.</li>
+</ul>
+
+<h2>20. To be in accordance with CANSPAM, we agree to the following:</h2>
+<ul>
+  <li>Not use false or misleading subjects or email addresses.</li>
+  <li>Identify the message as an advertisement in some reasonable way.</li>
+  <li>Include the physical address of our business or site headquarters.</li>
+  <li>Monitor third-party email marketing services for compliance, if one is used.</li>
+  <li>Honor opt-out/unsubscribe requests quickly.</li>
+  <li>Allow users to unsubscribe by using the link at the bottom of each email.</li>
+</ul>
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-black text-slate-400 py-12 text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <a class='inline-block mb-4' href='/'>
+      <img src="images/Ember Construction.png" alt="Ember Construction Logo" class="h-16 mx-auto mb-2">
+     <span style="color:#d88728 ; font-weight: bold;">Ember <span style="font-weight: 400;">Construction</span></span>
+    </a>
+
+    <p class="text-slate-300 mb-6">Transforming homes with quality craftsmanship and transparent service.</p>
+
+    <div class="flex items-center justify-center space-x-4">
+      <p class="text-slate-400">© 2025 <span style="color:#d88728 ; font-weight: bold;">Ember <span style="font-weight: 400;">Construction</span></span></p>
+      <a class='text-[#d88728] hover:text-white ' href='/privacy-policy'>Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!--======================================================-->
+<script src="script.js"></script>
+</body>
 </html>
