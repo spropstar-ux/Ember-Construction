@@ -45,7 +45,7 @@
 		<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between h-1 gap-3">
 			<!-- Left: Logo + Company Name -->
 			<a href="./index.html" class="flex items-center gap-2 group flex-shrink-0">
-				<img src="./images/Ember Construction.png" alt="Brand Logo" class="h-8 sm:h-10 md:h-10s w-auto">
+				<img src="./images/Ember Construction.png" alt="Brand Logo" class="h-8 sm:h-10 md:h-10 w-auto">
 				<span class="text-sm sm:text-sm md:text-base group-hover:text-orange transition duration-300" style="letter-spacing: 0.5px;">
 					    <span style="color: #d88728; font-weight: 700;">Ember</span>
 						<span style="color: #d88728; font-weight: 300;"> Construction</span>
@@ -53,7 +53,7 @@
 				</a>
 
 				<!-- Center: Navigation Links -->
-				<nav class="hidden lg:flex items-center gap-6 xl:gap-8 flex-grow justify-center">
+				<nav class="hidden md:flex items-center gap-6 xl:gap-8 flex-grow justify-center">
 					<a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#how-we-work">Process</a>
 					<a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#values">Values</a>
 					<a class="text-xs sm:text-sm tracking-widest uppercase text-gray-700 hover:text-orange transition duration-300" href="#gallery">Gallery</a>
@@ -107,34 +107,34 @@
 				<div class="hero-overlay"></div>
 
 				<div class="hero-content">
-					<div class="hero-wrapper">
+					<div class="hero-wrapper grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 						<div class="hero-left">
 							<h1>End-to-End Construction for Single-Family Assets</h1>
 							<p>Ember Construction manages scopes, permits, execution, and quality control delivering projects on time and on budget.</p>
 						</div>
 
 						<div class="hero-right">
-							<h2>Get Started</h2>
-							<p class="form-subtitle">Fill in the form below and we'll be in touch shortly</p>
+							<h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Get Started</h2>
+							<p class="form-subtitle text-gray-600 mb-6 text-sm md:text-base">Fill in the form below and we'll be in touch shortly</p>
 
-								<form id="contactForm">
-									<div class="form-group">
-										<label for="name">Full Name *</label>
-										<input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+								<form id="contactForm" class="space-y-5">
+									<div>
+										<label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+										<input type="text" id="name" name="name" class="w-full text-sm md:text-base px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition placeholder-gray-400" placeholder="John Doe" required>
 									</div>
 
-									<div class="form-group">
-										<label for="email">Email Address *</label>
-										<input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
+									<div>
+										<label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+										<input type="email" id="email" name="email" class="w-full text-sm md:text-base px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition placeholder-gray-400" placeholder="name@domain.com" required>
 									</div>
 
-									<div class="form-group">
-										<label for="phone">Phone Number</label>
-										<input type="tel" id="phone" name="phone" class="form-input" placeholder="(123) 456-7890">
+									<div>
+										<label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+										<input type="tel" id="phone" name="phone" class="w-full text-sm md:text-base px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition placeholder-gray-400" placeholder="(123) 456-7890">
 									</div>
 
-									<div class="form-group">
-										<button type="submit" class="btn-submit">Request Quote</button>
+									<div>
+										<button type="submit" class="w-full bg-orange hover:bg-orange-dark text-white font-semibold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105 shadow-md hover:shadow-lg">Request Quote</button>
 									</div>
 								</form>
 						</div>
@@ -142,10 +142,9 @@
 				</div>
 			</section>
 
-
 			<section id="about" class="about-section">
 				<div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-					<div class="about-wrapper">
+					<div class="about-wrapper grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 						<div class="about-image">
 							<img src="/images/about-image.jpg" alt="Ember Construction Team" class="about-img">
 						</div>
@@ -240,7 +239,7 @@
 			<section id="values" class="our-values-section">
 				<div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
 					<h2 class="values-title">Our Values</h2>
-					<div class="values-grid">
+					<div class="values-grid grid grid-cols-1 md:grid-cols-3 gap-8">
 						<div class="value-card">
 							<h3 class="value-card-title">Quality Excellence</h3>
 							<p class="value-card-subtitle">Uncompromising Standards</p>
@@ -266,19 +265,17 @@
 			<section class="testimonials-section">
 				<div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
 					<h2 class="testimonials-title">Hear what our clients have to say</h2>
-					<div class="testimonials-grid">
+					<div class="testimonials-grid grid grid-cols-1 md:grid-cols-3 gap-8">
 						<div class="testimonial-card">
 							<p class="testimonial-quote">"Working with Ember Construction transformed our vision into reality. Their attention to detail, professionalism, and commitment to excellence exceeded all expectations. The team managed every aspect seamlessly, ensuring our home renovation was completed on time and within budget. Highly recommended!"</p>
 							<div class="testimonial-author">
-								<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah M." class="testimonial-avatar">
-								<span class="author-name">— Sarah M.</span>
+							<span class="author-name">— Sarah M.</span>
 							</div>
 						</div>
 
 						<div class="testimonial-card">
 							<p class="testimonial-quote">"From the initial consultation to the final walkthrough, Ember Construction demonstrated exceptional craftsmanship and communication. They addressed every concern professionally and delivered a beautiful, functional space that we absolutely love. Our experience was truly outstanding."</p>
 							<div class="testimonial-author">
-								<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="David K." class="testimonial-avatar">
 								<span class="author-name">— David K.</span>
 							</div>
 						</div>
@@ -286,18 +283,15 @@
 						<div class="testimonial-card">
 							<p class="testimonial-quote">"Ember Construction didn't just build our home extension; they built it with heart. The quality of work, reliability, and genuine care for client satisfaction set them apart. We felt valued throughout the entire process and couldn't be happier with the results."</p>
 							<div class="testimonial-author">
-								<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Jessica T." class="testimonial-avatar">
 								<span class="author-name">— Jessica T.</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
-			<!-- CTA Section matching screenshot -->
+<!-- cta -->
 			<section class="cta-section">
 				<div class="cta-container">
-					<!-- Left: Copy with features -->
 					<div class="cta-left">
 						<h2>We Buy Houses at Any Price in any condition!</h2>
 						<div class="cta-features">
@@ -312,51 +306,44 @@
 						</div>
 					</div>
 
-					<!-- Right: Form Card -->
-					<div class="cta-right">
-						<div class="form-card">
-							<div class="logo-badge">
-								<img src="./images/Ember Construction.png" alt="Ember Construction Logo">
-							</div>
-
-							<div class="progress-section">
-								<p class="progress-label">Step 1 of 2</p>
-								<div class="progress-bar">
-									<div class="progress-fill" style="width: 50%;"></div>
-								</div>
-							</div>
-
-						<form id="contactForm">
-							<div class="form-group">
-								<label for="name">Full Name *</label>
-								<input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
-							</div>
-
-							<div class="form-group">
-								<label for="email">Email Address *</label>
-								<input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
-							</div>
-
-							<div class="form-group">
-								<label for="phone">Phone Number</label>
-								<input type="tel" id="phone" name="phone" class="form-input" placeholder="(123) 456-7890">
-							</div>
-
-							<div class="form-group">
-								<button type="submit" class="btn-submit">Request Quote</button>
-							</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
+											</div>
+												</section>
 
 		</main>
 
-		<footer class="footer-black">
-			<p>Copyright © Ember Construction All Rights Reserved | <a href="/privacypolicy.html">View Our Privacy Policy</a> | Designed by Team </p>
-		</footer>
+		<footer class="bg-neutral-900 text-slate-400 py-12 text-center">
+        <div class="max-w-3xl mx-auto px-6">
 
+            <!-- LOGO + NAME -->
+            <a href="#home" class="inline-block mb-4">
+                <img src="/images/Ember Construction.png"
+                    alt="Ember Construction Logo" class="h-16 mx-auto mb-2">
+                <span class="font-bold text-xl" style="color: #d88728;">Ember <span
+                        style="font-weight: 100;">Construction</span></span>
+            </a>
+
+            <!-- TAGLINE -->
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                Culturally fluent real estate services helping families buy, sell, and thrive with clarity and
+                confidence.
+            </p>
+
+            <!-- Separator -->
+            <div class="w-24 mx-auto my-6 border-t border-slate-700 opacity-60"></div>
+
+            <!-- COPYRIGHT + LINKS -->
+            <div class="flex items-center justify-center space-x-4 text-sm">
+                <p class="text-slate-300">© <span id="currentYear">2025</span> <span
+                        style="color: #d88728; font-weight: bold;"> Ember <span
+                            style="font-weight: 300;">Construction</span></span></p>
+                <span class="text-slate-600">•</span>
+                <a class='text-slate-300 hover:text-[#d88728] transition' href="./privacypolicy.html">
+                    Privacy Policy
+                </a>
+            </div>
+
+        </div>
+    </footer>
 		<!-- Scroll to Top Button (moved here to ensure correct order) -->
 		<button id="scrollTopBtn" class="scroll-to-top" aria-label="Scroll to top">
 			<svg fill="currentColor" viewBox="0 0 24 24">
