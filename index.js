@@ -275,7 +275,7 @@ document.querySelectorAll("form#loanForm").forEach(form => {
               Our team will connect with you shortly.
             </p>
             <p style="margin-top:18px; font-weight:bold; font-size:1.1rem; color:#000;">
-              – The Team
+              – The Ember Construction Team
             </p>
           </div>
         `,
