@@ -186,3 +186,130 @@ if (contactForm) {
 	else window.addEventListener('load', setup);
 })();
 
+// form
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+document.querySelectorAll("form#loanForm").forEach(form => {
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const fullNameEl = form.querySelector('#fullName') || document.getElementById('fullName');
+    const emailEl = form.querySelector('#email') || document.getElementById('email');
+    const phoneEl = form.querySelector('#phone') || document.getElementById('phone');
+
+    const formData = {
+      fullName: (fullNameEl && fullNameEl.value) ? fullNameEl.value.trim() : '',
+      email: (emailEl && emailEl.value) ? emailEl.value.trim() : '',
+      phone: (phoneEl && phoneEl.value) ? phoneEl.value.trim() : ''
+    };
+
+    // Clear previous errors
+    form.querySelectorAll('.error-message').forEach(el => el.classList.add('hidden'));
+
+    // Validate fields
+    let isValid = true;
+
+    // Validate Full Name
+    if (!formData.fullName) {
+      const errorEl = fullNameEl.parentElement.querySelector('.error-message');
+      if (errorEl) errorEl.classList.remove('hidden');
+      isValid = false;
+    }
+
+    // Validate Email
+    if (!formData.email || !isValidEmail(formData.email)) {
+      const errorEl = emailEl.parentElement.querySelector('.error-message');
+      if (errorEl) errorEl.classList.remove('hidden');
+      isValid = false;
+    }
+
+    // Validate Phone - MUST be exactly 10 digits
+    if (!formData.phone) {
+      const errorEl = phoneEl.parentElement.querySelector('.error-message');
+      if (errorEl) {
+        errorEl.textContent = 'Phone number is required';
+        errorEl.classList.remove('hidden');
+      }
+      isValid = false;
+    } else if (!/^\d{10}$/.test(formData.phone.replace(/\D/g, ''))) {
+      const errorEl = phoneEl.parentElement.querySelector('.error-message');
+      if (errorEl) {
+        errorEl.textContent = 'Phone number must be exactly 10 digits';
+        errorEl.classList.remove('hidden');
+      }
+      isValid = false;
+    }
+
+    if (!isValid) {
+      return;
+    }
+
+  const submitBtn = form.querySelector("button[type='submit']") || document.querySelector("button[type='submit']");
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = "<span class=\"spinner-border spinner-border-sm\"></span> Sending...";
+  }
+
+  try {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbzToPC_H3teYpobBpkDEFBF5nmmv8a7BBg8t1VsN30kOe3mS31jAfmy9A7wIWuowoKFzw/exec", {
+      method: "POST",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+    if (result.status === "success") {
+      Swal.fire({
+        html: `
+          <div style="padding: 30px; text-align:center;">
+            <h2 style="font-size: 1.6rem; font-weight:600; color:#000; margin-bottom:12px;">
+              Thank you, ${formData.fullName}
+            </h2>
+            <p style="font-size: 1rem; color:#444; margin-bottom:0; line-height:1.6;">
+              We’ve received your message.<br>
+              Our team will connect with you shortly.
+            </p>
+            <p style="margin-top:18px; font-weight:bold; font-size:1.1rem; color:#000;">
+              – The Team
+            </p>
+          </div>
+        `,
+        background: "#ffffff",
+        color: "#222",
+        width: 500,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        confirmButtonText: "Close",
+        confirmButtonColor: "#000000ff",
+        customClass: {
+          popup: "rounded-2xl shadow-2xl border-0",
+          confirmButton: "px-5 py-2 rounded-md font-medium"
+        }
+      }).then(() => form.reset());
+    } else {
+      throw new Error(result.message || "Something went wrong, please try again.");
+    }
+  } catch (error) {
+    Swal.fire({
+      title: "Oops!",
+      text: error.message,
+      icon: "error",
+      confirmButtonColor: "#b59b6e"
+    });
+  } finally {
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = "Submit";
+    }
+  }
+  });
+});
+
+
+
+

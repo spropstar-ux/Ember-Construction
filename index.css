@@ -1447,7 +1447,7 @@ html {
 .cta-section {
 	position: relative;
 	/* Image-backed CTA: hero image + warm dark overlay for contrast */
-	background-image: linear-gradient(rgba(11,13,15,0.62), rgba(11,13,15,0.62)), url('/images/cta-image.jfif');
+	background-image: linear-gradient(rgba(11,13,15,0.62), rgba(11,13,15,0.62)), url('https://res.cloudinary.com/de7y9vclv/image/upload/v1766779904/cta-image_erllyj.png');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1611,6 +1611,17 @@ html {
 	border: 1px solid rgba(216, 135, 40, 0.1);
 	backdrop-filter: blur(10px);
 	animation: slideInRight 0.8s ease-out;
+}
+
+.cta-form-wrapper input,
+.cta-form-wrapper textarea,
+.cta-form-wrapper select {
+	color: #1a1a1a !important;
+	font-weight: 500;
+}
+
+.cta-form-wrapper input::placeholder {
+	color: #999999;
 }
 
 .form-group {
