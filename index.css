@@ -1447,7 +1447,7 @@ html {
 .cta-section {
 	position: relative;
 	/* Image-backed CTA: hero image + warm dark overlay for contrast */
-	background-image: linear-gradient(rgba(11,13,15,0.62), rgba(11,13,15,0.62)), url('https://res.cloudinary.com/de7y9vclv/image/upload/v1766779904/cta-image_erllyj.png');
+	background-image: linear-gradient(rgba(11,13,15,0.62), rgba(11,13,15,0.62)), url('https://res.cloudinary.com/de7y9vclv/image/upload/v1767018248/steptodown.com726299_bj4z0e.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
