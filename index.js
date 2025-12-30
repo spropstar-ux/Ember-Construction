@@ -306,7 +306,7 @@ document.querySelectorAll("form#loanForm").forEach(form => {
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycby_VgBYAOZuSyjuPKhz9NLXpvRSGu9UD465HKiq49ZgqP0CiBijQzcU-zu6Vw365c89QA/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbw0T26XnXzv2nPcLqm9BCDSYa6QLiDTPpoDPGsQRgQgzcMFnmHnr_fVZ1ORP6d1A2iSmQ/exec", {
       method: "POST",
       headers: {
         "Content-Type": "text/plain;charset=utf-8"
