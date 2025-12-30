@@ -1,3 +1,17 @@
+// Reset scroll position on page load
+window.addEventListener('load', () => {
+	window.scrollTo(0, 0);
+});
+
+// Also reset scroll position immediately for faster effect
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', () => {
+		window.scrollTo(0, 0);
+	});
+} else {
+	window.scrollTo(0, 0);
+}
+
 // Scroll to Top Button Functionality
 (function initScrollToTop() {
 	const scrollTopBtn = document.getElementById('scrollTopBtn');
@@ -19,6 +33,44 @@
 			behavior: 'smooth'
 		});
 	});
+})();
+
+// Smooth scroll to section without changing URL
+(function initSmoothScroll() {
+	function smoothScrollToElement(target) {
+		if (!target) return;
+		const offset = 80; // navbar height
+		const elementPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+		window.scrollTo({
+			top: elementPosition,
+			behavior: 'smooth'
+		});
+	}
+
+	// Handle all anchor links
+	document.addEventListener('click', (e) => {
+		const link = e.target.closest('a[href^="#"]');
+		if (!link) return;
+
+		const targetId = link.getAttribute('href').substring(1);
+		const target = document.getElementById(targetId);
+
+		if (target) {
+			e.preventDefault();
+			smoothScrollToElement(target);
+			// Keep URL clean - don't change it
+		}
+	});
+
+	// Also handle direct page load with hash (support browser back/forward)
+	if (window.location.hash) {
+		const targetId = window.location.hash.substring(1);
+		const target = document.getElementById(targetId);
+		if (target) {
+			window.history.replaceState(null, '', window.location.pathname);
+			setTimeout(() => smoothScrollToElement(target), 300);
+		}
+	}
 })();
 
 // Mobile menu toggle (lightweight, Tailwind-based)
@@ -52,7 +104,7 @@
 		else close();
 	});
 
-	// Close on internal link click
+	// Close on internal link click (let smooth scroll handler take care of navigation)
 	panel.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', close));
 
 	document.addEventListener('keydown', (e) => {
