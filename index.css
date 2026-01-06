@@ -715,7 +715,7 @@ html {
 	}
 
 	.hero-left h1 {
-		font-size: 3.4rem;
+		font-size: 3.2rem;
 		margin-bottom: 20px;
 		line-height: 1.25;
 		font-weight: 700;
@@ -1534,14 +1534,6 @@ html {
 	animation: slideInUp 0.8s ease-out 0.1s both;
 }
 
-.cta-subtitle {
-	font-size: 1.5rem;
-	font-weight: 600;
-	color: #d88728;
-	margin: 0 0 40px 0;
-	animation: slideInUp 0.8s ease-out 0.2s both;
-}
-
 .cta-features {
 	display: flex;
 	flex-direction: column;
@@ -1695,11 +1687,6 @@ html {
 		font-size: 2rem;
 	}
 
-	.cta-subtitle {
-		font-size: 1.2rem;
-		margin-bottom: 30px;
-	}
-
 	.cta-left,
 	.cta-right {
 		animation: slideInUp 0.8s ease-out;
@@ -1749,11 +1736,6 @@ html {
 
 	.cta-title {
 		font-size: 1.6rem;
-	}
-
-	.cta-subtitle {
-		font-size: 1rem;
-		margin-bottom: 24px;
 	}
 
 	.cta-container {
@@ -1962,11 +1944,6 @@ html {
 		margin-bottom: 8px;
 	}
 
-	.cta-subtitle {
-		font-size: 1.1rem;
-		margin-bottom: 28px;
-	}
-
 	.cta-form-wrapper {
 		padding: 28px;
 	}
@@ -2081,11 +2058,6 @@ html {
 		margin-bottom: 6px;
 	}
 
-	.cta-subtitle {
-		font-size: 1rem;
-		margin-bottom: 24px;
-	}
-
 	.cta-features {
 		gap: 20px;
 	}
@@ -2155,14 +2127,14 @@ html {
 	}
 
 	.hero-left h1 {
-		font-size: 1.3rem;
+		font-size: 1.8rem;
 		margin-bottom: 8px;
 		line-height: 1.25;
 		font-weight: 700;
 	}
 
 	.hero-left p {
-		font-size: 0.85rem;
+		font-size: 0.9rem;
 		margin-bottom: 12px;
 		line-height: 1.5;
 	}
@@ -2255,11 +2227,6 @@ html {
 		font-size: 1.4rem;
 		margin-bottom: 4px;
 		font-weight: 700;
-	}
-
-	.cta-subtitle {
-		font-size: 0.95rem;
-		margin-bottom: 18px;
 	}
 
 	.cta-features {
